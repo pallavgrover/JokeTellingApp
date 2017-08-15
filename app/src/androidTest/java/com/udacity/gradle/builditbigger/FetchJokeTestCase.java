@@ -21,6 +21,7 @@ public class FetchJokeTestCase extends AndroidTestCase {
             assertTrue(joke.length() > 0);
         } catch (InterruptedException | ExecutionException e) {
             Log.e(TAG, Log.getStackTraceString(e));
+            fail("joke api failed");
         }
     }
 
